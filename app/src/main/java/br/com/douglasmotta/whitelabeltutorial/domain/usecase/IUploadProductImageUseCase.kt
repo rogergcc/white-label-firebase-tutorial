@@ -9,5 +9,5 @@ import android.net.Uri
  */
 interface IUploadProductImageUseCase {
 
-    suspend operator fun invoke(imageUrl: Uri):String
+    suspend operator fun invoke(imageUri: Uri):String
 }
