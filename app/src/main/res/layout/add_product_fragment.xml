@@ -8,7 +8,7 @@
     tools:context=".ui.addproduct.AddProductFragment">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_product"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginTop="8dp"
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/fab_margin"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/image_product"
         tools:layout_editor_absoluteX="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
