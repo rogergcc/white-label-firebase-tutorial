@@ -29,34 +29,35 @@ class AddProductViewModel @Inject constructor(
     val priceFieldErrorResId: LiveData<Int> = _priceFieldErrorResId
 
 
-    private var isFormValid =false
-    fun createProduct(description:String, price: String, imageUri: Uri?)=viewModelScope.launch {
-        isFormValid =true
+    private var isFormValid = false
+    fun createProduct(description: String, price: String, imageUri: Uri?) = viewModelScope.launch {
+        isFormValid = true
 
         _imageUriErrorResId.value = getDrawableResIdIfNull(imageUri)
         _descriptionFieldErrorResId.value = getErrorStringResIdIfEmpty(description)
         _priceFieldErrorResId.value = getErrorStringResIdIfEmpty(price)
 
-        if (isFormValid){
+        if (isFormValid) {
             try {
-                val product = createProductUsecase(description,price.fromCurrency(),imageUri!!)
-            }catch (e: Exception){
+                val product = createProductUsecase(description, price.fromCurrency(), imageUri!!)
+            } catch (e: Exception) {
                 Log.d("CreateProduct: ", e.toString())
             }
         }
     }
 
-    private fun getErrorStringResIdIfEmpty(value: String):Int?{
-        return if (value.isEmpty()){
-            isFormValid=false
+    private fun getErrorStringResIdIfEmpty(value: String): Int? {
+        return if (value.isEmpty()) {
+            isFormValid = false
             R.string.add_product_field_error
-        }else null
+        } else null
     }
-    private fun getDrawableResIdIfNull(value: Uri?):Int{
-        return if (value==null){
-            isFormValid=false
+
+    private fun getDrawableResIdIfNull(value: Uri?): Int {
+        return if (value == null) {
+            isFormValid = false
             R.drawable.background_product_image_error
-        }else R.drawable.background_product_image
+        } else R.drawable.background_product_image
     }
 
 }
