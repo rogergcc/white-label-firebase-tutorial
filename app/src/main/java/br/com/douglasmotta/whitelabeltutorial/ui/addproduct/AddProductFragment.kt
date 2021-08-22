@@ -6,13 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import br.com.douglasmotta.whitelabeltutorial.databinding.AddProductFragmentBinding
 import br.com.douglasmotta.whitelabeltutorial.util.CurrencyTextWatcher
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AddProductFragment : BottomSheetDialogFragment() {
 
     private var _binding:AddProductFragmentBinding?=null
@@ -26,13 +27,13 @@ class AddProductFragment : BottomSheetDialogFragment() {
             binding.imageProduct.setImageURI(uri)
         }
 
-    private lateinit var viewModel: AddProductViewModel
+    private val viewModel: AddProductViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = AddProductFragmentBinding.inflate(inflater,container,false)
 //        return inflater.inflate(R.layout.add_product_fragment, container, false)
         return binding.root
