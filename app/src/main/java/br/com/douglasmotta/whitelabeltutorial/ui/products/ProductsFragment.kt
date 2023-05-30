@@ -1,9 +1,11 @@
 package br.com.douglasmotta.whitelabeltutorial.ui.products
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -96,17 +98,30 @@ class ProductsFragment : Fragment() {
 
     private fun observeVMEvents() {
         viewModel.productsData.observe(viewLifecycleOwner) { products ->
+            binding.emptyState.root.visibility = View.GONE
             binding.swipeRefreshProducts.isRefreshing = false
+            Log.e(Companion.TAG, "productsData observeVMEvents: $products")
             productsAdapter.submitList(products)
         }
         viewModel.addButtonVisibilityData.observe(viewLifecycleOwner) { visibility ->
             binding.fabAdd.visibility = visibility
+        }
+        viewModel.errorMessage.observe(viewLifecycleOwner) { message ->
+            binding.emptyState.root.visibility = View.VISIBLE
+            binding.swipeRefreshProducts.isRefreshing = false
+            binding.emptyState.lblEmptyMessage.text = message
+            Log.d(Companion.TAG, "errorMessage observeVMEvents: $message")
+            Toast.makeText(context, "e: $message", Toast.LENGTH_SHORT).show()
         }
     }
 
     override fun onDestroyView() {
         _binding = null
         super.onDestroyView()
+    }
+
+    companion object {
+        private const val TAG = "ProductsFragment"
     }
 
 }

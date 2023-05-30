@@ -26,6 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/item_product"
             />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_add"
             android:layout_width="wrap_content"
@@ -34,8 +35,12 @@
             android:contentDescription="@string/products_fab_add_product"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_add"
-            />
+            app:srcCompat="@drawable/ic_add" />
+
+        <include
+            android:id="@+id/emptyState"
+            layout="@layout/empty_state_view"
+            android:visibility="gone" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
