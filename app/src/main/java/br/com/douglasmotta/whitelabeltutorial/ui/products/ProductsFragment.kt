@@ -97,20 +97,30 @@ class ProductsFragment : Fragment() {
     }
 
     private fun observeVMEvents() {
+
         viewModel.productsData.observe(viewLifecycleOwner) { products ->
             binding.emptyState.root.visibility = View.GONE
             binding.swipeRefreshProducts.isRefreshing = false
-            Log.e(Companion.TAG, "productsData observeVMEvents: $products")
+            Log.e(TAG, "productsData observeVMEvents: $products")
+            if (products.isEmpty()) {
+                binding.emptyState.root.visibility = View.VISIBLE
+                binding.emptyState.imgState.setImageResource(R.drawable.no_data_cuate)
+                binding.emptyState.lblEmptyMessage.text =
+                    getString(R.string.products_empty_state_message)
+            }
             productsAdapter.submitList(products)
+
+
         }
         viewModel.addButtonVisibilityData.observe(viewLifecycleOwner) { visibility ->
             binding.fabAdd.visibility = visibility
         }
         viewModel.errorMessage.observe(viewLifecycleOwner) { message ->
             binding.emptyState.root.visibility = View.VISIBLE
+            binding.emptyState.imgState.setImageResource(R.drawable.no_internet)
             binding.swipeRefreshProducts.isRefreshing = false
             binding.emptyState.lblEmptyMessage.text = message
-            Log.d(Companion.TAG, "errorMessage observeVMEvents: $message")
+            Log.d(TAG, "errorMessage observeVMEvents: $message")
             Toast.makeText(context, "e: $message", Toast.LENGTH_SHORT).show()
         }
     }

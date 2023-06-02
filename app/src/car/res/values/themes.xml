@@ -19,7 +19,7 @@
     </style>
 
     <style name="Text.Primary">
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
     </style>
 
     <style name="Text.Secondary">
