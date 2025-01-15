@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-Launcher_Icon_-_Car_Admin_Foreground">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="Launcher_Icon_-_Car_Admin_Foreground" data-name="Launcher Icon - Car Admin Foreground" clip-path="url(#clip-Launcher_Icon_-_Car_Admin_Foreground)">
+    <rect width="512" height="512" fill="rgba(38,65,143,0)"/>
+    <path id="Caminho_2" data-name="Caminho 2" d="M47.51-18.555H17.725L11.035,0H1.367L28.516-71.094h8.2L63.916,0H54.3ZM20.557-26.27h24.17L32.617-59.521ZM73.486,0V-71.094H93.555a32.306,32.306,0,0,1,16.406,4.1,27.74,27.74,0,0,1,11.011,11.67A37.985,37.985,0,0,1,124.9-37.939V-33.4a38.118,38.118,0,0,1-3.882,17.627A27.305,27.305,0,0,1,109.937-4.15,34.364,34.364,0,0,1,93.164,0Zm9.375-63.379V-7.666h9.863q10.84,0,16.87-6.738t6.03-19.189v-4.15q0-12.109-5.688-18.823T93.8-63.379Zm68.311-7.715,23.242,58.008,23.242-58.008h12.158V0h-9.375V-27.686l.879-29.883L177.979,0H170.8L147.51-57.422l.928,29.736V0h-9.375V-71.094ZM236.426,0h-9.375V-71.094h9.375ZM308.2,0h-9.424L262.988-54.785V0h-9.424V-71.094h9.424l35.889,55.029V-71.094H308.2Z" transform="translate(101.215 473.047)" fill="#fff"/>
+    <g id="time_to_leave_white_24dp" transform="translate(66.291 36.291)">
+      <path id="Caminho_3" data-name="Caminho 3" d="M0,0H379.418V379.418H0Z" fill="none"/>
+      <path id="Caminho_4" data-name="Caminho 4" d="M283.346,22.7A26.447,26.447,0,0,0,258.341,4H64.634C53.012,4,43.326,11.774,39.628,22.7L3,133.57V281.65c0,10.18,7.924,18.51,17.61,18.51h17.61c9.685,0,17.61-8.33,17.61-18.51V263.14H267.146v18.51c0,10.18,7.924,18.51,17.61,18.51h17.61c9.685,0,17.61-8.33,17.61-18.51V133.57ZM70.8,41.02H252l18.314,55.53H52.483Zm213.958,185.1H38.219V139.863l2.113-6.293H282.818l1.937,6.293Z" transform="translate(28.222 37.629)" fill="#fff"/>
+      <ellipse id="Elipse_1" data-name="Elipse 1" cx="15.949" cy="15.529" rx="15.949" ry="15.529" transform="translate(99.079 199.212)" fill="#fff"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="15.529" cy="15.529" r="15.529" transform="translate(248.68 199.212)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

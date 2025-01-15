@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.168" y1="-0.158" x2="1.185" y2="1.174" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8e0000"/>
+      <stop offset="1" stop-color="#c62828"/>
+    </linearGradient>
+    <clipPath id="clip-Launcher_Icon_-_Car_Admin_Background">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="Launcher_Icon_-_Car_Admin_Background" data-name="Launcher Icon - Car Admin Background" clip-path="url(#clip-Launcher_Icon_-_Car_Admin_Background)">
+    <rect width="512" height="512" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-Launcher_Icon_-_Car_Foreground">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="Launcher_Icon_-_Car_Foreground" data-name="Launcher Icon - Car Foreground" clip-path="url(#clip-Launcher_Icon_-_Car_Foreground)">
+    <rect width="512" height="512" fill="rgba(38,65,143,0)"/>
+    <g id="time_to_leave_white_24dp" transform="translate(66.291 66.291)">
+      <path id="Caminho_3" data-name="Caminho 3" d="M0,0H379.418V379.418H0Z" fill="none"/>
+      <path id="Caminho_4" data-name="Caminho 4" d="M283.346,22.7A26.447,26.447,0,0,0,258.341,4H64.634C53.012,4,43.326,11.774,39.628,22.7L3,133.57V281.65c0,10.18,7.924,18.51,17.61,18.51h17.61c9.685,0,17.61-8.33,17.61-18.51V263.14H267.146v18.51c0,10.18,7.924,18.51,17.61,18.51h17.61c9.685,0,17.61-8.33,17.61-18.51V133.57ZM70.8,41.02H252l18.314,55.53H52.483Zm213.958,185.1H38.219V139.863l2.113-6.293H282.818l1.937,6.293Z" transform="translate(28.222 37.629)" fill="#fff"/>
+      <ellipse id="Elipse_1" data-name="Elipse 1" cx="15.949" cy="15.529" rx="15.949" ry="15.529" transform="translate(99.079 199.212)" fill="#fff"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="15.529" cy="15.529" r="15.529" transform="translate(248.68 199.212)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
